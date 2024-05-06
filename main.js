@@ -20,6 +20,7 @@ const tempoObjetivo4 = new Date("2024-02-01T00:00:00");
 const tempos =
 [tempoObjetivo1,tempoObjetivo2, tempoObjetivo3,tempoObjetivo4];
 
+
 function calculaTempo(tempoObjetivo) {
 
 let tempoAtual = new Date();
@@ -38,7 +39,6 @@ return [dias, horas, minutos, segundos];
 return [0,0,0,0];
 }
 }
-
 function atualizaCronometro(){
 for (let i= 0; i< contadores.length;i++) {
 Document.getElementByld("dias"+i).textContent=
@@ -51,7 +51,6 @@ document.getElementByld("seg"+i).textContent=
 calculaTempo(tempos[i])[3];
 }
 }
-
 function comecaConometro(){
 atualizaCronometro();
 setInterval(atualizaConometro, 1000);
