@@ -38,7 +38,7 @@ function calculaTempo(tempoObjetivo) {
     if (tempoFinal > 0){
         return [dias,horas,minutos,segundos];
     } else {
-        return [5,4,3,0];
+        return [7,6,5,4];
     }
 }
 
